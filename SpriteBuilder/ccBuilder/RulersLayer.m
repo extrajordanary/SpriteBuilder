@@ -97,7 +97,7 @@ static NSString * const kRulerLabelsFontName = @"ruler-numbers.fnt";
 	[[CocosScene cocosScene] forceRedraw];
 
     CCDirectorMac *dir = (CCDirectorMac *)[CCDirector sharedDirector];
-    viewScale = dir.contentScaleFactor / dir.deviceContentScaleFactor;
+    viewScale = dir.contentScaleFactor / dir.contentScaleFactor;
 }
 
 - (id) init
